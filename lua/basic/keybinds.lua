@@ -27,7 +27,7 @@ vim.keybinds.gmap("n", "<C-d>", "10j", vim.keybinds.opts)
 vim.keybinds.gmap("i", "<C-k>", "<up>", vim.keybinds.opts)
 vim.keybinds.gmap("i", "<C-j>", "<down>", vim.keybinds.opts)
 vim.keybinds.gmap("i", "<C-h>", "<left>", vim.keybinds.opts)
-vim.keybinds.gmap("i", "<C-l>", "<right>", vim.keybinds.opts)
+vim.keybinds.gmap("i", "<C-n>", "<right>", vim.keybinds.opts)
 
 -- 修改分屏大小
 vim.keybinds.gmap("n", "<M-up>", "<cmd>res +1<CR>", vim.keybinds.opts)
@@ -55,3 +55,4 @@ vim.keybinds.gmap("n", "gr", ":call CocActionAsync('jumpReferences')<CR>", vim.k
 vim.keybinds.gmap("n", "gu", ":call CocActionAsync('jumpUsed')<CR>", vim.keybinds.opts)
 vim.keybinds.gmap("n", "<leader>qf", ":call CocActionAsync('doQuickfix')<CR>", vim.keybinds.opts)
 vim.keybinds.gmap("n", "<leader>rn", ":call CocActionAsync('rename')<CR>", vim.keybinds.opts)
+vim.keybinds.gmap("n", "<leader>i", ":call CocAction('runCommand', 'editor.action.organizeImport')<CR>", vim.keybinds.opts)
